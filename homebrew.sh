@@ -40,6 +40,7 @@ brew install m4
 brew install make
 
 # Non-GNU tools
+brew install aspell --with-lang-en
 brew install file-formula
 brew install git
 brew install less
