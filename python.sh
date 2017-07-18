@@ -15,6 +15,7 @@ else
 fi
 
 brew install python3
+brew install graphviz --with-bindings
 
 python3.6 -m venv $HOME/.local/venvs/cloud && source $HOME/.local/venvs/cloud/bin/activate
 pip install --upgrade pip
