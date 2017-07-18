@@ -48,13 +48,6 @@ brew install openssh
 brew install rsync
 brew install svn
 brew install unzip
-##brew cask install texlive
-##brew cask install inkscape
-
-##  Python setup
-brew install python3
-##pip3 install pelican==3.6.3
-##pip3 install markdown rpy2
 
 brew tap homebrew/science
 ##  lmod is in the homebrew/science tap, so install this here.
@@ -62,3 +55,6 @@ brew install lmod
 brew install openmpi --c++11 --with-mpi-thread-multiple
 brew install hdf5 --c++11 --with-fortran --with-mpi
 brew install netcdf --with-fortran
+##  I don't know if there's a way to trigger an upate via the command-line, may need to just use the graphical updater and deal.
+brew cask install mactex
+brew cask install inkscape
