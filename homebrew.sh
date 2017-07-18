@@ -55,9 +55,6 @@ brew install python3
 ##pip3 install pelican==3.6.3
 ##pip3 install markdown rpy2
 
-##  R setup
 brew tap homebrew/science
 ##  lmod is in the homebrew/science tap, so install this here.
 brew install lmod
-brew install openblas
-brew install r --with-openblas
