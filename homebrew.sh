@@ -59,3 +59,6 @@ brew install python3
 brew tap homebrew/science
 ##  lmod is in the homebrew/science tap, so install this here.
 brew install lmod
+brew install openmpi --c++11 --with-mpi-thread-multiple
+brew install hdf5 --c++11 --with-fortran --with-mpi
+brew install netcdf --with-fortran
