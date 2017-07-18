@@ -1,15 +1,33 @@
 #!/bin/sh
 
-##  Assuming that R_LIBS is already set in my environment.
 if ! test -d $HOME/.R; then
     mkdir $HOME/.R
+else
+    if test -f $HOME/.R/Makevars; then
+        cp $HOME/.R/Makevars $HOME/.R/Makevars.bak.$(date '+%Y%m%d.%H%M%S')
+    fi
+fi
+
+if test -f $HOME/.Rprofile; then
+    mv $HOME/.Rprofile $HOME/.Rprofile.$(date '+%Y%m%d.%H%M%S')
+fi
+
+echo 'Sys.setlocale(category="LC_ALL", locale = "en_US.UTF-8")' > $HOME/.Rprofile
+
+if test -z $R_LIBS; then
+    export R_LIBS=$HOME/.local/R/3.4
+    if ! test -d $R_LIBS; then
+        mkdir -p $R_LIBS
+    fi
+else
+    if ! test -d $R_LIBS; then
+        mkdir -p $R_LIBS
+    fi
 fi
 
 brew tap homebrew/science
 brew install openblas
 brew install r --with-openblas
-
-echo 'Sys.setlocale(category="LC_ALL", locale = "en_US.UTF-8")' >> $HOME/.Rprofile
 
 echo "CC=/usr/local/opt/llvm/bin/clang -fopenmp
 CXX=/usr/local/opt/llvm/bin/clang++
