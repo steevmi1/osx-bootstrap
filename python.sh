@@ -37,5 +37,5 @@ python3.6 -m venv $HOME/.local/venvs/ML && source $HOME/.local/venvs/ML/bin/acti
 pip install --upgrade pip
 pip install --upgrade setuptools
 pip install --upgrade wheel
-pip install jupyter tensorflow scikit-learn mxnet graphviz keras pandas matplotlib seaborn h5py
+pip install jupyter tensorflow scikit-learn mxnet graphviz keras pandas matplotlib seaborn h5py scikit-image
 deactivate
