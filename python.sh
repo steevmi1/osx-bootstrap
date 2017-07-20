@@ -38,4 +38,5 @@ pip install --upgrade pip
 pip install --upgrade setuptools
 pip install --upgrade wheel
 pip install jupyter tensorflow scikit-learn mxnet graphviz keras pandas matplotlib seaborn h5py scikit-image
+pip install orange3
 deactivate
