@@ -49,6 +49,8 @@ brew install rsync
 brew install svn
 brew install unzip
 
+brew install octave --with-x11
+
 brew tap homebrew/science
 ##  lmod is in the homebrew/science tap, so install this here.
 brew install lmod
