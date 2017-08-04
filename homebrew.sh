@@ -48,6 +48,7 @@ brew install openssh
 brew install rsync
 brew install svn
 brew install unzip
+brew install jq
 
 brew install octave --with-x11
 
