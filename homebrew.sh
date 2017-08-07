@@ -43,12 +43,13 @@ brew install make
 brew install aspell --with-lang-en
 brew install file-formula
 brew install git
+brew install jq
 brew install less
 brew install openssh
+brew install protobuf
 brew install rsync
 brew install svn
 brew install unzip
-brew install jq
 
 brew install octave --with-x11
 
