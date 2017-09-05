@@ -23,6 +23,7 @@ pip install --upgrade setuptools
 pip install --upgrade wheel
 pip install awscli
 pip install cfncluster
+pip install ansible
 deactivate
 
 python3.6 -m venv $HOME/.local/venvs/pelican && source $HOME/.local/venvs/pelican/bin/activate
