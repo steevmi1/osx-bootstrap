@@ -62,3 +62,4 @@ brew install netcdf --with-fortran
 ##  I don't know if there's a way to trigger an upate via the command-line, may need to just use the graphical updater and deal.
 brew cask install mactex
 brew cask install inkscape
+brew cask install KeePassXC
