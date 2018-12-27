@@ -46,6 +46,7 @@ brew install file-formula
 brew install git
 brew install jq
 brew install less
+brew install neomutt
 brew install openssh
 brew install protobuf
 brew install rsync
