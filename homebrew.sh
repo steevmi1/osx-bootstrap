@@ -26,6 +26,7 @@ brew install gnutls
 brew install grep --with-default-names
 brew install gzip
 brew install screen
+brew install tmux
 brew install watch
 brew install wdiff --with-gettext
 brew install wget
