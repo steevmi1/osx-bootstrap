@@ -72,3 +72,12 @@ brew install hdf5 --c++11 --with-fortran --with-mpi
 brew install netcdf --with-fortran
 brew cask install inkscape
 brew cask install KeePassXC
+
+##  Put in some standard fonts to pretty up displays
+brew tap caskroom/fonts
+brew cask install font-awesome-terminal-fonts
+brew cask install font-fontawesome
+brew cask install font-inconsolata-nerd-font
+brew cask install font-inconsolata-nerd-font-mono
+brew cask install font-iosevka-nerd-font
+brew cask install font-iosevka-nerd-font-mono
