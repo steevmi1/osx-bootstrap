@@ -25,11 +25,20 @@ brew install gnu-which --with-default-names
 brew install gnutls
 brew install grep --with-default-names
 brew install gzip
+brew install ksh
 brew install screen
 brew install tmux
 brew install watch
 brew install wdiff --with-gettext
 brew install wget
+brew install zsh
+
+if -f /usr/local/bin/ksh; then
+  echo "/usr/local/bin/ksh" | sudo tee -a /etc/shells
+fi
+if -f /usr/local/bin/zsh; then
+  echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
+fi
 
 # Additional tools
 brew install emacs
