@@ -14,20 +14,7 @@ fi
 
 echo 'Sys.setlocale(category="LC_ALL", locale = "en_US.UTF-8")' > $HOME/.Rprofile
 
-if test -z $R_LIBS; then
-    export R_LIBS=$HOME/.local/R/3.4
-    if ! test -d $R_LIBS; then
-        mkdir -p $R_LIBS
-    fi
-else
-    if ! test -d $R_LIBS; then
-        mkdir -p $R_LIBS
-    fi
-fi
-
-brew tap homebrew/science
-brew install openblas
-brew install r --with-openblas
+brew install R
 
 echo "CC=/usr/local/opt/llvm/bin/clang -fopenmp
 CXX=/usr/local/opt/llvm/bin/clang++
