@@ -31,6 +31,7 @@ brew install tmux
 brew install watch
 brew install wdiff --with-gettext
 brew install wget
+brew install vim
 brew install zsh
 
 if -f /usr/local/bin/ksh; then
