@@ -81,3 +81,6 @@ brew cask install font-inconsolata-nerd-font
 brew cask install font-inconsolata-nerd-font-mono
 brew cask install font-iosevka-nerd-font
 brew cask install font-iosevka-nerd-font-mono
+brew cask install font-inconsolata-for-powerline
+brew cask install font-inconsolata-for-powerline-bold
+brew cask install font-powerline-symbols
