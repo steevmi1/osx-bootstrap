@@ -34,6 +34,7 @@ brew install wget
 brew install vim
 brew install zsh
 
+echo "Setting up /etc/shells...."
 if -f /usr/local/bin/ksh; then
   echo "/usr/local/bin/ksh" | sudo tee -a /etc/shells
 fi
