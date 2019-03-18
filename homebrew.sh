@@ -9,36 +9,36 @@ export PATH=/usr/local/bin:$PATH
 
 brew update
 brew doctor
-brew prune
+brew cleanup --prune-prefix
 
 # Install core tools
 brew install coreutils
 brew install binutils
 brew install diffutils
-brew install ed --with-default-names
+brew install ed
 brew install findutils
 brew install gawk
-brew install gnu-indent --with-default-names
-brew install gnu-sed --with-default-names
-brew install gnu-tar --with-default-names
-brew install gnu-which --with-default-names
+brew install gnu-indent
+brew install gnu-sed
+brew install gnu-tar
+brew install gnu-which
 brew install gnutls
-brew install grep --with-default-names
+brew install grep
 brew install gzip
 brew install ksh
 brew install screen
 brew install tmux
 brew install watch
-brew install wdiff --with-gettext
+brew install wdiff
 brew install wget
 brew install vim
 brew install zsh
 
 echo "Setting up /etc/shells...."
-if -f /usr/local/bin/ksh; then
+if test -f /usr/local/bin/ksh; then
   echo "/usr/local/bin/ksh" | sudo tee -a /etc/shells
 fi
-if -f /usr/local/bin/zsh; then
+if test -f /usr/local/bin/zsh; then
   echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
 fi
 
@@ -52,7 +52,7 @@ brew install m4
 brew install make
 
 # Non-GNU tools
-brew install aspell --with-lang-en
+brew install aspell
 brew install file-formula
 brew install git
 brew install jq
@@ -64,14 +64,13 @@ brew install rsync
 brew install svn
 brew install unzip
 
-brew install octave --with-x11
-
 brew install lmod
-brew install openmpi --c++11 --with-mpi-thread-multiple
-brew install hdf5 --c++11 --with-fortran --with-mpi
-brew install netcdf --with-fortran
+brew install openmpi
+brew install hdf5
+brew install netcdf
 brew cask install inkscape
 brew cask install KeePassXC
+brew cask install iterm2
 
 ##  Put in some standard fonts to pretty up displays
 brew tap caskroom/fonts
