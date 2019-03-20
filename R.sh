@@ -1,5 +1,8 @@
 #!/bin/sh
 
+##  From https://github.com/oracle/truffleruby/issues/1417#issuecomment-424973433
+echo "Please make sure you've run '/Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg' to get the right headers in place to compile things."
+
 if ! test -d $HOME/.R; then
     mkdir $HOME/.R
 else
@@ -18,6 +21,10 @@ brew install R
 
 echo "CC=/usr/local/opt/llvm/bin/clang -fopenmp
 CXX=/usr/local/opt/llvm/bin/clang++
+CXX11=$CXX
+CXX14=$CXX
+CXX17=$CXX
+CXX1X=$CXX
 # -O3 shoulGd be faster than -O2 (default) level optimisation ..
 CFLAGS=-g -O3 -Wall -pedantic -std=gnu99 -mtune=native -pipe
 CXXFLAGS=-g -O3 -Wall -pedantic -std=c++11 -mtune=native -pipe
@@ -33,6 +40,10 @@ EOF
 rm ~/.R/Makevars
 echo "CC=/usr/local/opt/llvm/bin/clang
 CXX=/usr/local/opt/llvm/bin/clang++
+CXX11=$CXX
+CXX14=$CXX
+CXX17=$CXX
+CXX1X=$CXX
 # -O3 should be faster than -O2 (default) level optimisation ..
 CFLAGS=-g -O3 -Wall -pedantic -std=gnu99 -mtune=native -pipe
 CXXFLAGS=-g -O3 -Wall -pedantic -std=c++11 -mtune=native -pipe
