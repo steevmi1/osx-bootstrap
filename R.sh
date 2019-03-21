@@ -15,16 +15,16 @@ if test -f $HOME/.Rprofile; then
     mv $HOME/.Rprofile $HOME/.Rprofile.$(date '+%Y%m%d.%H%M%S')
 fi
 
-echo 'Sys.setlocale(category="LC_ALL", locale = "en_US.UTF-8")' > $HOME/.Rprofile
+##echo 'Sys.setlocale(category="LC_ALL", locale = "en_US.UTF-8")' > $HOME/.Rprofile
 
 brew install R
 
 echo "CC=/usr/local/opt/llvm/bin/clang -fopenmp
 CXX=/usr/local/opt/llvm/bin/clang++
-CXX11=$CXX
-CXX14=$CXX
-CXX17=$CXX
-CXX1X=$CXX
+CXX11=/usr/local/opt/llvm/bin/clang++
+CXX14=/usr/local/opt/llvm/bin/clang++
+CXX17=/usr/local/opt/llvm/bin/clang++
+CXX1X=/usr/local/opt/llvm/bin/clang++
 # -O3 shoulGd be faster than -O2 (default) level optimisation ..
 CFLAGS=-g -O3 -Wall -pedantic -std=gnu99 -mtune=native -pipe
 CXXFLAGS=-g -O3 -Wall -pedantic -std=c++11 -mtune=native -pipe
@@ -40,10 +40,10 @@ EOF
 rm ~/.R/Makevars
 echo "CC=/usr/local/opt/llvm/bin/clang
 CXX=/usr/local/opt/llvm/bin/clang++
-CXX11=$CXX
-CXX14=$CXX
-CXX17=$CXX
-CXX1X=$CXX
+CXX11=/usr/local/opt/llvm/bin/clang++
+CXX14=/usr/local/opt/llvm/bin/clang++
+CXX17=/usr/local/opt/llvm/bin/clang++
+CXX1X=/usr/local/opt/llvm/bin/clang++
 # -O3 should be faster than -O2 (default) level optimisation ..
 CFLAGS=-g -O3 -Wall -pedantic -std=gnu99 -mtune=native -pipe
 CXXFLAGS=-g -O3 -Wall -pedantic -std=c++11 -mtune=native -pipe
