@@ -18,6 +18,7 @@ fi
 ##echo 'Sys.setlocale(category="LC_ALL", locale = "en_US.UTF-8")' > $HOME/.Rprofile
 
 brew install R
+brew install libomp
 
 echo "CC=/usr/local/opt/llvm/bin/clang -fopenmp
 CXX=/usr/local/opt/llvm/bin/clang++
