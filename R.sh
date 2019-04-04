@@ -59,3 +59,9 @@ R --vanilla << EOF
 install.packages('tidyverse', repos = 'http://cran.us.r-project.org')
 q()
 EOF
+
+##  Hrbrthemes
+R --vanilla << EOF
+install.packages('hrbrthemes', repos = 'http://cran.us.r-project.org')
+q()
+EOF
