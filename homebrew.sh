@@ -50,6 +50,7 @@ brew install gpatch
 brew install llvm
 brew install m4
 brew install make
+brew install pkg-config
 
 # Non-GNU tools
 brew install aspell
