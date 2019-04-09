@@ -11,67 +11,12 @@ brew update
 brew doctor
 brew cleanup --prune-prefix
 
-# Install core tools
-brew install coreutils
-brew install binutils
-brew install diffutils
-brew install ed
-brew install findutils
-brew install gawk
-brew install gnu-indent
-brew install gnu-sed
-brew install gnu-tar
-brew install gnu-which
-brew install gnutls
-brew install grep
-brew install gzip
-brew install ksh
-brew install screen
-brew install tmux
-brew install watch
-brew install wdiff
-brew install wget
-brew install vim
-brew install zsh
-
-echo "Setting up /etc/shells...."
-if test -f /usr/local/bin/ksh; then
-  echo "/usr/local/bin/ksh" | sudo tee -a /etc/shells
-fi
-if test -f /usr/local/bin/zsh; then
-  echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
-fi
-
-# Additional tools
-brew install emacs
-brew install gdb # gdb requires further actions to make it work. See `brew info gdb`. Follow this link for instructions https://medium.com/@royalstream/how-to-install-and-codesign-gdb-on-os-x-el-capitan-aab3d1172e95#.jbzcfeegv
-brew install gnupg
-brew install gpatch
-brew install llvm
-brew install m4
-brew install make
-brew install pkg-config
-
-# Non-GNU tools
-brew install aspell
-brew install file-formula
-brew install git
-brew install jq
-brew install less
-brew install neomutt
-brew install openssh
-brew install protobuf
-brew install rsync
-brew install svn
-brew install unzip
-
-brew install lmod
-brew install openmpi
-brew install hdf5
-brew install netcdf
+brew cask install appcleaner
 brew cask install inkscape
-brew cask install KeePassXC
 brew cask install iterm2
+brew cask install KeePassXC
+brew cask install slack
+brew cask install xquartz
 
 ##  Put in some standard fonts to pretty up displays
 brew tap caskroom/fonts
@@ -175,4 +120,66 @@ brew cask install font-ubuntu-nerd-font
 brew cask install font-ubuntu-nerd-font-mono
 brew cask install font-ubuntumono-nerd-font
 brew cask install font-ubuntumono-nerd-font-mono
+
+# Install core tools
+brew install coreutils
+brew install binutils
+brew install diffutils
+brew install ed
+brew install findutils
+brew install gawk
+brew install gnu-indent
+brew install gnu-sed
+brew install gnu-tar
+brew install gnu-which
+brew install gnutls
+brew install grep
+brew install gzip
+brew install ksh
+brew install screen
+brew install tmux
+brew install watch
+brew install wdiff
+brew install wget
+brew install vim
+brew install zsh
+
+echo "Setting up /etc/shells...."
+if test -f /usr/local/bin/ksh; then
+  echo "/usr/local/bin/ksh" | sudo tee -a /etc/shells
+fi
+if test -f /usr/local/bin/zsh; then
+  echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
+fi
+
+# Additional tools
+brew install cmake
+brew install emacs
+brew install gdb # gdb requires further actions to make it work. See `brew info gdb`. Follow this link for instructions https://medium.com/@royalstream/how-to-install-and-codesign-gdb-on-os-x-el-capitan-aab3d1172e95#.jbzcfeegv
+brew install gnupg
+brew install gpatch
+brew install lcdf-typetools
+brew install llvm
+brew install m4
+brew install make
+brew install pkg-config
+
+# Non-GNU tools
+brew install aspell
+brew install file-formula
+brew install git
+brew install jq
+brew install less
+brew install neomutt
+brew install openssh
+brew install openssl@1.1
+brew install protobuf
+brew install rsync
+brew install svn
+brew install unzip
+
+brew install lmod
+brew install openmpi
+brew install hdf5
+brew install netcdf
 
