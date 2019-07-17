@@ -122,8 +122,9 @@ brew cask install font-ubuntumono-nerd-font
 brew cask install font-ubuntumono-nerd-font-mono
 
 # Install core tools
-brew install coreutils
 brew install binutils
+brew install coreutils
+brew install curl
 brew install diffutils
 brew install ed
 brew install findutils
@@ -183,3 +184,8 @@ brew install openmpi
 brew install hdf5
 brew install netcdf
 
+brew install nmap
+brew install wireshark
+
+brew install cairo
+brew install R
