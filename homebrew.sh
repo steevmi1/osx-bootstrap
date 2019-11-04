@@ -11,10 +11,10 @@ brew update
 brew doctor
 brew cleanup --prune-prefix
 
+##  Install some casks that come in handy:
 brew cask install appcleaner
 brew cask install inkscape
 brew cask install iterm2
-brew cask install KeePassXC
 brew cask install slack
 brew cask install xquartz
 
