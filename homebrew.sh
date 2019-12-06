@@ -163,6 +163,8 @@ brew install lcdf-typetools
 brew install llvm
 brew install m4
 brew install make
+brew install neofetch
+brew install pinentry-mac
 brew install pkg-config
 
 # Non-GNU tools
